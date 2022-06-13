@@ -1,141 +1,143 @@
 .backdrop.is-hidden {
-    opacity: 0;
-     pointer-events: none;
-     visibility: hidden;
-    }
-    
-    .backdrop.is-hidden .modal-buy {
-     transform: scale(1.2) translate(-50%, -50%);
-       transform-origin: center;
-     }
-    .backdrop {
-     position: fixed;
-     z-index: 5;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
-         
-     background-color: rgba(225, 121, 146, 0.2); 
-     transition: opacity 250ms ease, visibility 250ms ease;
-    
-     overflow-y: scroll;
-    }
-    .modal-buy {
-        position: absolute;
-        padding: 30px;
-        top: 50%;
-        left: 50%;
-        z-index: 10;
-        
-        max-height: 600px;
-        background-color: var(--section-color-top); 
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-        border-radius: 4px;
-        transform: translate(-50%, -50%) scale(1);
-        transition: transform 250ms ease, opacity 250ms ease, visibility 250ms ease;
-        transform-origin: center;
-        @include mobile {
-          width: calc(100% - 30px);
-        }
-        @media screen and (min-width:530px) {
-            width: 500px;
-        }
-      
-        @include desktop {
-          width: 550px;
-        
-        }
-        }
-        .modal-buy__close {
-            display: block;
-            margin-left:auto;
-            margin-bottom: 15px;
-            border: none;
-            background-color: transparent;
-            position: relative;
-            height: 18px;
-            width: 18px;
-            transition: background-color 250ms ease;
-            &:hover span::before, &:focus span::before, &:hover span::after, &:focus span::after {
-                background-color:var(--accent-color);
-            }
-           
-            span::before {
-                content: "";
-                position: absolute;
-                top: 9px;
-                left: 0;
-                width: 100%;
-                height: 1px;
-                background-color: var(--light-color);
-                transform: rotate(45deg);
-            }
-            span::after {
-                content: "";
-                position: absolute;
-                top: 9px;
-                left: 0;
-                width: 100%;
-                height: 1px;
-                background-color: var(--light-color);
-                transform: rotate(-45deg);
-            }
-        }
-.modal-buy__title {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.3;
-    text-align: center;
-    color: var(--light-color);
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
 
+.backdrop.is-hidden .modal-buy {
+  transform: scale(1.2) translate(-50%, -50%);
+  transform-origin: center;
+}
+.backdrop {
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(225, 121, 146, 0.2);
+  transition: opacity 250ms ease, visibility 250ms ease;
+
+  overflow-y: scroll;
+}
+.modal-buy {
+  position: absolute;
+  padding: 30px;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+
+  max-height: 600px;
+  background-color: var(--section-color-top);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms ease, opacity 250ms ease, visibility 250ms ease;
+  transform-origin: center;
+  @include mobile {
+    width: calc(100% - 30px);
+  }
+  @media screen and (min-width: 530px) {
+    width: 500px;
+  }
+
+  @include desktop {
+    width: 550px;
+  }
+}
+.modal-buy__close {
+  display: block;
+  margin-left: auto;
+  margin-bottom: 15px;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  height: 18px;
+  width: 18px;
+  transition: background-color 250ms ease;
+  &:hover span::before,
+  &:focus span::before,
+  &:hover span::after,
+  &:focus span::after {
+    background-color: var(--accent-color);
+  }
+
+  span::before {
+    content: '';
+    position: absolute;
+    top: 9px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--light-color);
+    transform: rotate(45deg);
+  }
+  span::after {
+    content: '';
+    position: absolute;
+    top: 9px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--light-color);
+    transform: rotate(-45deg);
+  }
+}
+.modal-buy__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.3;
+  text-align: center;
+  color: var(--light-color);
 }
 .modal-buy__label {
-    display: block;
-    margin-top: 10px;
-    margin-bottom: 4px;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.3;
-    color: var(--light-color);
-    transition: color 250ms ease;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.3;
+  color: var(--light-color);
+  transition: color 250ms ease;
 }
 
-.modal-buy__field:focus .modal-buy__label, 
+.modal-buy__field:focus .modal-buy__label,
 .modal-buy__field:hover .modal-buy__label {
-    color:var(--accent-color);
+  color: var(--accent-color);
 }
 .modal-buy__input {
-    width: 100%;
-    height: 40px;
-    border: 2px solid var(--section-color-top);
-    border-radius: 4px;
-    
-    padding: 12px 22px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
-    color: var(--section-color-top);
-    
-    transition: border-color 250ms ease, opacity 250ms ease, visibility 250ms ease;
-     
-    outline: none;
+  width: 100%;
+  height: 40px;
+  border: 2px solid var(--section-color-top);
+  border-radius: 10px;
 
-    &:hover, &:focus {
-      border-color: var(--accent-color);
-    }
-    
-    
+  padding: 12px 22px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--section-color-top);
+
+  transition: border-color 250ms ease, opacity 250ms ease, visibility 250ms ease;
+
+  outline: none;
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
   }
-  
+}
 
-  .modal-buy__submit {
-   width: 200px;
+.modal-buy__submit {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
   height: 50px;
   background-color: var(--light-color);
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
-  border-radius: 4px; 
+  border-radius: 15px;
   border-color: transparent;
   letter-spacing: 0.06em;
   font-weight: 700;
@@ -145,26 +147,26 @@
   cursor: pointer;
   transition: background-color 250ms ease;
   outline: none;
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     background-color: var(--hover-btn-light);
     border-color: var(--accent-color);
   }
 }
 .modal-buy__select {
-    display: flex;
-    min-width: 250px;
-    border-radius: 10px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
-    color: var(--section-color-top);
-    
-    select + select {
-        min-width: 30px;
-        margin-left: 10px;
-    }
-    
+  display: flex;
+  min-width: 250px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: var(--section-color-top);
+
+  select + select {
+    min-width: 30px;
+    margin-left: 10px;
+  }
 }

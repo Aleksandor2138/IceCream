@@ -74,6 +74,10 @@
   height: 40px;
   object-fit: cover;
   border-radius: 4px;
+  @include mobile {
+  min-width: 40px;
+  min-height: 40px;
+  }
   @include tablet {
     width: 90px;
     height: 90px;
@@ -87,7 +91,10 @@
 }
 
 .gallery__img--first {
-  margin-bottom: 5px;
+  margin-bottom: 4px;
+  @include mobile {
+  margin-bottom: 6px;
+  }
   @include tablet {
     margin-bottom: 8px;
   }
@@ -100,6 +107,10 @@
   width: 80px;
   height: 80px;
   object-fit: cover;
+  @include mobile {
+  min-width: 80px;
+  min-height: 80px;
+  }
   @include tablet {
     width: 180px;
     height: 180px;

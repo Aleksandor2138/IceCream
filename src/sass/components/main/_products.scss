@@ -119,10 +119,9 @@
     margin: 0 auto 160px auto;
     padding: 160px 40px 40px 40px;
     &:last-child {
-        margin-bottom: 0;
+      margin-bottom: 0;
     }
-    }
-
+  }
 
   @media screen and (min-width: 768px) {
     width: 224px;
@@ -165,32 +164,32 @@
   @media screen and (min-width: 320px) and (max-width: 767px) {
     top: -150px;
     background-image: url('../images/products/mobile/drink-mobile-1x.png');
-  
+
     @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
       background-image: url('../images/products/mobile/drink-mobile-2x.png');
     }
   }
   @media screen and (min-width: 768px) {
     top: -150px;
     background-image: url('../images/products/tablet/pic-tablet-1x.png');
-    
+
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-        background-image: url('../images/products/tablet/pic-tablet-2x.png');
+      background-image: url('../images/products/tablet/pic-tablet-2x.png');
     }
   }
 
   @media screen and (min-width: 1280px) {
     top: -250px;
     background-image: url('../images/products/desktop/pic1-desktop-1x.png');
-    
+
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-        background-image: url('../images/products/desktop/pic1-desktop-2x.png');
+      background-image: url('../images/products/desktop/pic1-desktop-2x.png');
     }
   }
 }
@@ -219,7 +218,7 @@
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-        background-image: url('../images/products/mobile/drink-mobile-2x-1.png');
+      background-image: url('../images/products/mobile/drink-mobile-2x-1.png');
     }
   }
   @media screen and (min-width: 768px) {
@@ -229,7 +228,7 @@
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-        background-image: url('../images/products/tablet/pic-tablet-2x-1.png');
+      background-image: url('../images/products/tablet/pic-tablet-2x-1.png');
     }
   }
 
@@ -240,7 +239,7 @@
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-        background-image: url('../images/products/desktop/pic2-desktop-2x.png');
+      background-image: url('../images/products/desktop/pic2-desktop-2x.png');
     }
   }
 }
@@ -268,7 +267,7 @@
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-        background-image: url('../images/products/mobile/drink-mobile-2x-2.png');
+      background-image: url('../images/products/mobile/drink-mobile-2x-2.png');
     }
   }
   @media screen and (min-width: 768px) {
@@ -278,7 +277,7 @@
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-        background-image: url('../images/products/tablet/pic-tablet-2x-2.png');
+      background-image: url('../images/products/tablet/pic-tablet-2x-2.png');
     }
   }
 
@@ -289,7 +288,7 @@
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-        background-image: url('../images/products/desktop/pic3-desktop-2x.png');
+      background-image: url('../images/products/desktop/pic3-desktop-2x.png');
     }
   }
 }
@@ -387,6 +386,12 @@
     background-color: var(--hover-btn-dark);
     fill: var(--light-color);
   }
+}
+
+.products-icon-more,
+.products-icon-less {
+  transform-origin: center center;
+  transform: rotate(90deg);
 }
 
 #amore,

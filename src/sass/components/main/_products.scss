@@ -346,3 +346,29 @@ margin-left: auto;
         fill: var(--light-color);
         }
 }
+
+.overlay {
+    position: relative;
+    overflow: hidden;
+}
+.overlay-text {
+    font-family: 'DM Sans';
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: var(--light-color);
+    font-weight: 700;
+    position: absolute;
+    top: 0%;
+    height: 294px;
+    background-color: rgba(33, 150, 243, 0.9);
+    padding: 24px 24px;
+    border-radius: 10px;
+    overflow: auto;
+    transform: translatex(-100%);
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier (0.4, 0, 0.2, 1);
+    .products__item:hover & {
+        transform: translatex(0%);
+    }
+}

@@ -1,0 +1,1 @@
+{"mappings":"AAAEA,EAAE,SAASC,OAAM,WACfD,EAAEE,MAAMC,QAAQ,mBAAmBC,YAAY","sources":["src/js/flipcard.js"],"sourcesContent":["  $(\".flip\").click(function(){\n    $(this).parents(\".products__item\").toggleClass(\"flipped\");\n  });"],"names":["$","click","this","parents","toggleClass"],"version":3,"file":"index.721136a8.js.map"}
